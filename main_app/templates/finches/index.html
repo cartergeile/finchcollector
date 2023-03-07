@@ -5,6 +5,7 @@
 
 {% for finch in finches %}
   <div class="card blue-grey lighten-4">
+    <a href="/finches/{{finch.id}}">
     <div class="card-content">
       <span class="card-title">{{ finch.name }}</span>
       <p>Description: {{ finch.description }}</p>
@@ -14,6 +15,7 @@
         <p>Age: Baby</p>
       {% endif %}
     </div>
+  </a>
   </div>
 {% endfor %}
 
